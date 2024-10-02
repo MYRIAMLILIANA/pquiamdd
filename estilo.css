@@ -1,0 +1,37 @@
+body {
+    background-color: #87CEEB; /* Fondo celeste */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.animated-text {
+    color: black; /* Texto en negro */
+    opacity: 0;
+    transform: translateY(20px) scale(0.8) rotate(-5deg);
+    animation: complexAnimation 2s forwards;
+    margin: 10px 0;
+}
+
+@keyframes complexAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8) rotate(-5deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(0) scale(1.1) rotate(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+}
+
